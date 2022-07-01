@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="705.0" prefWidth="1255.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgnew.MainMenuController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="6.0" prefHeight="695.0" prefWidth="1250.0">
+          <children>
+            <FlowPane fx:id="done" layoutX="620.0" layoutY="72.0" orientation="VERTICAL" prefHeight="602.0" prefWidth="300.0" />
+              <Label fx:id="label" layoutX="21.0" layoutY="52.0" minHeight="16" minWidth="69" text="To do">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font></Label>
+            <FlowPane fx:id="todo" layoutX="24.0" layoutY="72.0" orientation="VERTICAL" prefHeight="602.0" prefWidth="300.0" />
+            <FlowPane fx:id="doing" layoutX="324.0" layoutY="72.0" orientation="VERTICAL" prefHeight="602.0" prefWidth="300.0" />
+            <FlowPane fx:id="today" layoutX="920.0" layoutY="72.0" orientation="VERTICAL" prefHeight="602.0" prefWidth="300.0" />
+            <Label layoutX="324.0" layoutY="53.0" text="Doing" textFill="#c6bf33">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="620.0" layoutY="52.0" text="Done" textFill="#358f1e">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="920.0" layoutY="52.0" text="Today" textFill="#e50909">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font></Label>
+            <Button layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#addTask" prefHeight="26.0" prefWidth="78.0" text="Add Task">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font></Button>
+            <MenuBar layoutX="104.0" layoutY="14.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Sort by">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Owners" />
+                        <MenuItem mnemonicParsing="false" text="Date" />
+                        <MenuItem mnemonicParsing="false" text="Urgency" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+          </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
